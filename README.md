@@ -29,3 +29,19 @@ python3 scripts/jsonl2doc.py original-data/en-validation.jsonl doc-in
 ```
 
 Translate DOCX files from `doc-in/` using [DeepL](<https://www.deepl.com/>) and save outputs in `doc-out/`.
+
+Convert back to JSONL
+
+```
+python3 scripts/doc2jsonl.py \
+    --include-original \
+    original-data/en-validation.jsonl \
+    doc-out/en-validation-*.docx \
+    > oasst1-fi-validation.jsonl
+
+python3 scripts/doc2jsonl.py \
+    --include-original \
+    original-data/en-train.jsonl \
+    doc-out/en-train-*.docx \
+    > oasst1-fi-train.jsonl
+```
