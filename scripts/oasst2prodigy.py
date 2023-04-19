@@ -85,7 +85,7 @@ def main(argv):
     print(f'output {output_count}', file=sys.stderr)
     print(f'excluded {deleted_count} marked "deleted"', file=sys.stderr)
     print(f'excluded {nolabels_count} missing "labels"', file=sys.stderr)
-    print(f'skipped {skipped_count} due to command-line args"', file=sys.stderr)
+    print(f'skipped {skipped_count} due to command-line args', file=sys.stderr)
 
 
 if __name__ == '__main__':
